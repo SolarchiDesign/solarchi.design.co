@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<a class="tile" href="#" aria-label="Projet — Coffee shop Ardoise">
+<img src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?q=80&w=1600&auto=format&fit=crop" alt="Coffee shop design">
+<div class="caption">Coffee shop Ardoise — 120 m² — Lyon</div>
+</a>
+<a class="tile" href="#" aria-label="Projet — Bureaux Nova">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop" alt="Open space moderne">
+<div class="caption">Bureaux Nova — 540 m² — Marseille</div>
+</a>
+</div>
+</section>
+
+
+<!-- MÉTHODE -->
+<section class="section" id="process">
+<h2>Méthode</h2>
+<div class="steps" style="margin-top:12px">
+<div class="step"><span class="n">1</span><h3>Brief</h3><p class="muted">Appel découverte, objectifs, budget, délais.</p></div>
+<div class="step"><span class="n">2</span><h3>Concept</h3><p class="muted">Moodboard, zoning, premières 3D.</p></div>
+<div class="step"><span class="n">3</span><h3>Projet</h3><p class="muted">Plans, matériaux, devis, planning.</p></div>
+<div class="step"><span class="n">4</span><h3>Réalisation</h3><p class="muted">Suivi de chantier, livraison, aftercare.</p></div>
+</div>
+</section>
+
+
+<!-- TÉMOIGNAGES -->
+<section class="section" id="temoignages">
+<h2>Ils nous font confiance</h2>
+<div class="quotes" style="margin-top:12px">
+<blockquote>
+<p>“Un accompagnement précis et créatif, le résultat dépasse nos attentes.”</p>
+<footer class="muted">— C. Martin, fondatrice, Ardoise</footer>
+</blockquote>
+<blockquote>
+<p>“Excellent sens de l’espace et des matériaux, chantier maîtrisé de A à Z.”</p>
+<footer class="muted">— T. Nguyen, direction retail</footer>
+</blockquote>
+<blockquote>
+<p>“Équipe à l’écoute, planning respecté, magnifique rendu final.”</p>
+<footer class="muted">— L. Dupont, particulier</footer>
+</blockquote>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Parlons de votre projet</h2>
+<p class="muted">Réponse sous 24–48h. Décrivez votre besoin, nous revenons vers vous pour un premier échange.</p>
+<!-- Formulaire via Formspree (remplacez YOUR_ID) ou utilisez un autre service de formulaires) -->
+<form action="https://formspree.io/f/YOUR_ID" method="POST">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+<input name="name" placeholder="Votre nom" required />
+<input type="email" name="email" placeholder="Votre e‑mail" required />
+</div>
+<select name="type">
+<option value="Aménagement intérieur">Aménagement intérieur</option>
+<option value="Retail / Horeca">Retail / Horeca</option>
+<option value="Bureaux">Bureaux</option>
+<option value="Autre">Autre</option>
+</select>
+<textarea name="message" rows="5" placeholder="Parlez‑nous de votre projet (surface, lieu, délais, budget)…" required></textarea>
+<button class="btn" type="submit">Envoyer la demande</button>
+</form>
+<p class="muted" style="margin-top:10px; font-size:.9rem">En envoyant ce formulaire vous acceptez notre <a href="#" style="text-decoration:underline">politique de confidentialité</a>.</p>
+</section>
+</main>
+
+
+<footer>
+<div class="container" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+<div>© <span id="year"></span> Studio Espace — SIREN 123 456 789</div>
+<div class="muted">IG: @studioespace • <a class="muted" href="mailto:bonjour@studioespace.fr">bonjour@studioespace.fr</a></div>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click', e=>{ const id=a.getAttribute('href'); if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'});} });
+});
+</script>
+</body>
+</html>
